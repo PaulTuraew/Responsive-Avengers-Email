@@ -7,13 +7,14 @@
     <title>Example</title>
     <style>
         * {
-            font-family: Helvetica, Arial, "Lucida Grande";
+            font-family: Geneva, Tahoma, Verdana, sans-serif;
         }
         
         body {
             margin: 0;
             padding: 0;
             width: 100%;
+            background-color: #f2f7fb;
         }
         
         .body-wrap {
@@ -22,8 +23,8 @@
         
         .button {
             text-decoration: none;
-            color: #FFFFFF;
-            background-color: blueviolet;
+            color: #01fdfe;
+            background-color: black;
             padding: 10px 16px;
             font-weight: bold;
             text-align: center;
@@ -33,20 +34,29 @@
             width: 25%;
         }
         
-        @media only screen and (max-width: 480px){
-            .footer-container{
+        .footer {
+            background-color: #0f0c0c;
+            color: #01fdfe;
+        }
+        
+        .footer p {
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .footer-container {
                 display: block !important;
                 width: 100% !important;
             }
-            
-            .footer{
+            .footer {
                 width: 100% !important;
             }
         }
     </style>
 </head>
 
-<body bgcolor="#FFFFFF">
+<body>
     <table class="body-wrap">
         <tr>
             <td class="container" style="max-width: 600px; margin: 0 auto; display: block;">
@@ -55,23 +65,23 @@
                         <tr>
                             <td align="left">
                                 <p>
-                                    <img src="http://placehold.it/250x100">
+                                    <img src="images/stark.png">
                                 </p>
                             </td>
                             <td>
                                 &nbsp;
                             </td>
                             <td align="right">
-                                <p> <img src="http://placehold.it/100x100">
+                                <p> <img src="images/Avengers-logo-sq.png">
                                 </p>
                             </td>
                         </tr>
                     </table>
-                    <table bgcolor="#F9F9F9" width="100%" style="border: 1px solid; border-collapse: collapse;">
+                    <table bgcolor="#d1e1fa" width="100%" style="border: 1px solid; border-collapse: collapse;">
                         <tr>
                             <td style="vertical-align:top;">
                                 <p>
-                                    <img src="http://placehold.it/600x200" style="max-width: 100%">
+                                    <img src="images/full-avengers.png" style="max-width: 100%">
                                 </p>
                             </td>
                         </tr>
@@ -100,9 +110,15 @@
                                 <p>
                                     Thank you for being green.
                                 </p>
-                                <p>
-                                    Sincerely,
-                                    <br> Iron Man
+                                <p>Sincerely,
+                                </p>
+                                <p><img src="images/tony-headshot.jpg" align="left" style="margin-bottom: 20px;">
+                                    <span style="padding-left: 20px;"><strong>Tony Stark</strong></span>
+                                    <br>
+                                    <span style="padding-left: 20px;">CEO</span>
+                                    </br>
+                                    <span style="padding-left: 20px;">Stark Enterprises</span>
+                                    </br>
                                 </p>
                             </td>
                         </tr>
@@ -114,24 +130,30 @@
         </tr>
     </table>
     <!-- end .body-wrap-->
-    <table class="footer" style="width: 600px; border: 1px dashed; margin: 0 auto;">
+
+    <table class="footer" style="width: 600px; margin: 0 auto;">
         <tr>
             <td class="footer-container" style="width:50%;">
-                <table width="100%" style="border: 1px solid">
+                <table width="100%">
                     <tr>
                         <td>
-                            <h4>Connect with Us</h4>
-                            <p>Phone: <strong>(555)555-5555</strong><br/>
-                Email: <strong><a href="emailto:sample@email.com">tony@stark.com</a></strong></p>
+                            <h4 style="text-align:center;">CONNECT WITH JARVIS</h4>
+                            <p>PHONE: (555)555-5555</p>
+                            <p>EMAIL: <a href="emailto:sample@email.com" style="color:#01fdfe;">tony@stark.com</a>
+                            </p>
+                            <p><a href="#" style="background-repeat: no-repeat; display: inline-block; border-radius:3px; font-weight:700;text-align:center;text-decoration:none;box-shadow:0 1px 0 #11161a;color:#ffffff;font-size:10px;line-height:25px;background-color:#19a9e5;background-image:url(http://i3.createsend1.com/ti/y/15/70B/861/011614/images/tweet.gif);padding-left:24px;text-shadow:0 1px 0 #1895c9;width:100px;">TWEET</a>
+                            </p>
+                            <p><a href="#" style="background-repeat: no-repeat; display: inline-block;border-radius:3px;font-weight:700;text-align:center;text-decoration:none;box-shadow:0 1px 0 #11161a;color:#ffffff;font-size:10px;line-height:25px;background-color:#18527c;background-image:url(http://i4.createsend1.com/ti/y/15/70B/861/011614/images/like.gif);padding-left:16px;text-shadow:0 1px 0 #184a6f;width:100px;">LIKE</a>
+                            </p>
                         </td>
                     </tr>
                 </table>
             </td>
             <td class="footer-container" style="width:50%;">
-                <table width="100%" style="border: 1px solid">
+                <table width="100%">
                     <tr>
                         <td>
-                            <p><img src="/images/stark-industries.png" style="max-width: 100%; margin: 0 auto; display: block;">
+                            <p><img src="images/stark-industries2.png" style="max-width: 100%; margin: 0 auto; display: block;">
                             </p>
 
                         </td>
